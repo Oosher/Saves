@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        img {
+            width: 30vw;
+            display: block;
+            margin: 0 auto;
+        }
+
+        div {
+            opacity: 0;
+            margin: 0 auto;
+            width: 30vw;
+            height: 10vh;
+            background-color: turquoise;
+            transition: all 0.2s ease-in-out;
+
+        }
+
+        div p {
+            width: 100%;
+            text-align: center;
+            padding: auto;
+            position: relative;
+            top: 39%;
+
+        }
+
+        img:hover+div {
+            opacity: 0.8;
+            transform: translatey(-10vh);
+        }
+    </style>
+</head>
+
+<body>
+    <img src="download (2).png" alt="bru">
+    <div>
+        <p>Bruh</p>
+    </div>
+</body>
+
+</html>
