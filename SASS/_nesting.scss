@@ -1,0 +1,31 @@
+nav {
+    width: $baseWidth;
+    z-index: 100;
+    background-color: yellow;
+    margin: auto;
+    position: relative;
+
+
+    ul {
+
+        display: flex;
+        justify-content: space-evenly;
+        list-style-type: none;
+        height: 6vh;
+
+        a {
+            display: block;
+            color: $baseColor;
+            font-size: $baseSize;
+            font-family: $baseFont;
+            text-decoration: none;
+            text-align: center;
+
+            &:hover {
+                background-color: $baseColor;
+                background-color: $backColor;
+            }
+        }
+    }
+
+}

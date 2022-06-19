@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 header {
   margin: 0;
   width: 100vw;
@@ -8,6 +14,33 @@ header {
   text-align: center;
   font-size: 3rem;
   line-height: 1.8;
+  z-index: 88;
+}
+
+nav {
+  width: 40vw;
+  z-index: 100;
+  background-color: yellow;
+  margin: auto;
+  position: relative;
+}
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  height: 6vh;
+}
+nav ul a {
+  display: block;
+  color: rgb(235, 106, 106);
+  font-size: 1.3rem;
+  font-family: arial;
+  text-decoration: none;
+  text-align: center;
+}
+nav ul a:hover {
+  background-color: rgb(235, 106, 106);
+  background-color: rgb(106, 243, 138);
 }
 
 section {
