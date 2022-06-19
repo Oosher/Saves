@@ -1,13 +1,13 @@
 $baseColor:rgb(235, 106, 106);
 $backColor:yellow;
 $baseSize:1.3rem;
-$baseWidth:500px;
+$baseWidth:40vw;
 $baseFont:arial;
 
 section {
+    margin: 0 auto;
     width: $baseWidth;
     background-color: $backColor;
-
 }
 
 
