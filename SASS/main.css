@@ -1,16 +1,18 @@
 section {
   margin: 0 auto;
   width: 40vw;
-  background-color: yellow;
+  background-color: rgb(106, 243, 138);
 }
 
 section h1 {
   color: rgb(235, 106, 106);
   font-family: arial;
+  text-shadow: rgb(60, 59, 59) 0.5px 0.5px;
 }
 
 section p {
   font-size: 1.3rem;
   font-family: arial;
   color: rgb(235, 106, 106);
+  text-shadow: rgb(60, 59, 59) 0.5px 0.5px;
 }/*# sourceMappingURL=main.css.map */

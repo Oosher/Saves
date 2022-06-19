@@ -1,8 +1,9 @@
 $baseColor:rgb(235, 106, 106);
-$backColor:yellow;
+$backColor:rgb(106, 243, 138);
 $baseSize:1.3rem;
 $baseWidth:40vw;
 $baseFont:arial;
+$textShadow:rgb(60, 59, 59) 0.5px 0.5px;
 
 section {
     margin: 0 auto;
@@ -14,6 +15,7 @@ section {
 section h1 {
     color: $baseColor;
     font-family: $baseFont;
+    text-shadow: $textShadow;
 }
 
 
@@ -21,4 +23,5 @@ section p {
     font-size: $baseSize;
     font-family: $baseFont;
     color: $baseColor;
+    text-shadow: $textShadow;
 }
