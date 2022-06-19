@@ -1,14 +1,12 @@
-$baseColor:rgb(235, 106, 106);
-$backColor:rgb(106, 243, 138);
-$baseSize:1.3rem;
-$baseWidth:40vw;
-$baseFont:arial;
-$textShadow:rgb(60, 59, 59) 0.5px 0.5px;
+@import"header",
+"nesting",
+"setup";
 
 section {
-    margin: 0 auto;
+    margin: 60px auto;
     width: $baseWidth;
     background-color: $backColor;
+
 }
 
 
