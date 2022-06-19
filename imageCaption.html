@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Caption</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: brown;
+        }
+
+        figure {
+            margin: 0 auto;
+            width: 300px;
+            height: 300px;
+            overflow: hidden;
+        }
+
+        img {
+            width: 300px;
+            height: 300px;
+        }
+
+        figcaption {
+            opacity: 0;
+            height: 50px;
+            width: 300px;
+            background-color: blueviolet;
+            text-align: center;
+            font-size: 1.4rem;
+            line-height: 2.2;
+            transition: all 0.3s ease-in-out;
+
+
+        }
+
+        img:hover+figcaption {
+
+            opacity: 0.8;
+            transform: translatey(-53px);
+        }
+
+        div {
+            width: 300px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <figure>
+        <img src="download (2).png" alt="bru">
+        <figcaption>The great turn - by lex gravy</figcaption>
+    </figure>
+    <div>aaaaaaaaaaaa
+
+    </div>
+</body>
+
+</html>
