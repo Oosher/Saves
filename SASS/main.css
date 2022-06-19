@@ -1,3 +1,15 @@
-h1 {
-  color: aquamarine;
+section {
+  width: 500px;
+  background-color: yellow;
+}
+
+section h1 {
+  color: rgb(235, 106, 106);
+  font-family: arial;
+}
+
+section p {
+  font-size: 1.3rem;
+  font-family: arial;
+  color: rgb(235, 106, 106);
 }/*# sourceMappingURL=main.css.map */

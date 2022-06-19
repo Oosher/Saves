@@ -1,3 +1,24 @@
-h1 {
-    color: aquamarine;
+$baseColor:rgb(235, 106, 106);
+$backColor:yellow;
+$baseSize:1.3rem;
+$baseWidth:500px;
+$baseFont:arial;
+
+section {
+    width: $baseWidth;
+    background-color: $backColor;
+
+}
+
+
+section h1 {
+    color: $baseColor;
+    font-family: $baseFont;
+}
+
+
+section p {
+    font-size: $baseSize;
+    font-family: $baseFont;
+    color: $baseColor;
 }
