@@ -43,9 +43,14 @@ nav ul a:hover {
   background-color: rgb(106, 243, 138);
 }
 
-section {
-  margin: 60px auto;
+.box {
+  margin: 150px auto;
   width: 40vw;
+}
+
+section {
+  width: 100%;
+  margin: 10px 10px auto;
   background-color: rgb(106, 243, 138);
 }
 
