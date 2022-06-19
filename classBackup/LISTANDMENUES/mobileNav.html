@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Nav</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    nav {
+        width: 100vw;
+        height: 30px;
+        background-color: aqua;
+    }
+
+    .humburger {
+        width: 100vw;
+        height: 10vh;
+        color: wheat;
+        font-weight: bold;
+        line-height: 0.7;
+        padding: 10px;
+        background-color: black;
+        display: none;
+    }
+
+    ul {
+        list-style-type: none;
+        display: flex;
+
+    }
+
+    ul li a {
+        display: block;
+        width: 10vw;
+        text-align: center;
+        position: relative;
+        left: 27vw;
+        text-decoration: none;
+        color: purple;
+        border-right: 2px solid blue;
+        border-left: 2px solid blue;
+
+    }
+
+    @media(max-width:600px) {
+
+        .humburger {
+            display: block;
+            height: 5vh;
+        }
+
+        ul {
+            flex-direction: column;
+            width: 20vw;
+            background-color: black;
+
+
+        }
+
+        ul li a {
+            background-color: black;
+            color: white;
+            line-height: 2;
+            left: 0vw;
+            border: none;
+            border-bottom: 1px white solid;
+            width: 100%;
+        }
+
+        nav ul {
+            display: none;
+        }
+
+        .humburger:hover+ul {
+            display: block;
+        }
+    }
+</style>
+
+<body>
+    <nav>
+        <div class="humburger">&#9776</div>
+        <ul>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>

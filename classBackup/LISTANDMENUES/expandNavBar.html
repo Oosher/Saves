@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expanding Navigation Bar</title>
+    <style>
+      nav {
+        width: 500px;
+        height: 50px;
+      }
+      a {
+        display: block;
+        text-decoration: none;
+        background-color: aqua;
+        position: relative;
+      }
+      li {
+        display: block;
+        list-style-type: none;
+      }
+
+      li ul {
+        display: none;
+      }
+      li:hover ul {
+        display: block;
+      }
+      #men1 {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+      }
+      #men2 {
+        position: absolute;
+        top: 0px;
+        left: 100px;
+      }
+      #men3 {
+        position: absolute;
+        top: 0px;
+        left: 200px;
+      }
+      #men4 {
+        position: absolute;
+        top: 0px;
+        left: 300px;
+      }
+      #men5 {
+        position: absolute;
+        top: 0px;
+        left: 400px;
+      }
+      #men2 ul {
+        position: absolute;
+        top: 20px;
+        left: 100px;
+      }
+      #men3 ul {
+        position: absolute;
+        top: 20px;
+        left: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#" id="men1">heading</a></li>
+        <li>
+          <a href="#" id="men2">heading</a>
+          <ul>
+            <li><a href="#">sub</a></li>
+            <li><a href="#">sub</a></li>
+            <li><a href="#">sub</a></li>
+            <li><a href="#">sub</a></li>
+            <li><a href="#">sub</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" id="men3">heading</a>
+          <ul>
+            <li><a href="#">sub</a></li>
+            <li><a href="#">sub</a></li>
+            <li><a href="#">sub</a></li>
+            <li><a href="#">sub</a></li>
+            <li><a href="#">sub</a></li>
+          </ul>
+        </li>
+        <li><a href="#" id="men4">heading</a></li>
+        <li><a href="#" id="men5">heading</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>

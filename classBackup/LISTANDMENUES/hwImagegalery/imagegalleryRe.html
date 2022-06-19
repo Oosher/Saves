@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>image gallery 2</title>
+    <style>
+      img[alt*="small"] {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 20px;
+        display: block;
+        cursor: pointer;
+      }
+      img[alt*="big"] {
+        width: 700px;
+        height: 700px;
+        position: absolute;
+        top: 10%;
+        left: 40%;
+        display: none;
+      }
+      img[alt*="small"]:hover + img[alt*="big"] {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="bruh-gpo.gif" alt="bruhsmall" />
+    <img src="bruh-gpo.gif" alt="bruhbig" />
+    <img src="Gull.jpg" alt="gullsmall" />
+    <img src="Gull.jpg" alt="gullbig" />
+    <img src="im.jpg" alt="imsmall" />
+    <img src="im.jpg" alt="imbig" />
+    <img src="yellow-sus.gif" alt="sussmall" />
+    <img src="yellow-sus.gif" alt="susbig" />
+  </body>
+</html>

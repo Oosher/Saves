@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        * {
+            margin: 1px;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr) 250px;
+            grid-template-rows: 50px 2fr 3fr 1fr;
+            height: 100vh;
+            width: 100vw;
+            gap: 10px;
+        }
+
+        header {
+            grid-column: 1/5;
+            grid-row: 1/2;
+            text-align: center;
+            background-color: rgb(237, 101, 101);
+
+        }
+
+        footer {
+            background-color: orangered;
+            grid-column: 1/5;
+            grid-row: 4/5;
+            text-align: center;
+            border: yellow groove 4px;
+        }
+
+        .box {
+            background-color: aqua;
+            border: groove blue 2px;
+            grid-column: 1/2;
+            grid-row: 2/3;
+
+        }
+
+        .box2 {
+            background-color: aqua;
+            border: groove blue 2px;
+            grid-column: 2/3;
+            grid-row: 2/3;
+
+        }
+
+        .box3 {
+            background-color: aqua;
+            border: groove blue 2px;
+            grid-column: 3/4;
+            grid-row: 2/3;
+
+        }
+
+        aside {
+            background-color: crimson;
+            grid-column: 4/5;
+            grid-row: 2/4;
+        }
+
+        section {
+            background-color: darkcyan;
+            grid-column: 1/4;
+            grid-row: 3/4;
+            border: darkcyan groove 5px;
+
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+
+        }
+
+        nav {
+            width: 38vw;
+            height: 50px;
+            position: absolute;
+            left: 32vw;
+
+
+
+
+        }
+
+        a {
+            display: block;
+            text-decoration: none;
+            background-color: crimson;
+            position: relative;
+            width: 100px;
+            color: yellow;
+            text-shadow: 0.5px 0.5px black;
+            border-right: 1.5px white solid;
+            border-left: 1.5px white solid;
+            line-height: 2;
+            text-align: center;
+            border-bottom: 1.5px white solid;
+            font-size: 15pt;
+
+        }
+
+        li {
+            display: block;
+            list-style-type: none;
+            float: left;
+        }
+
+
+        li ul {
+            display: none;
+        }
+
+        li:hover ul {
+            display: block;
+        }
+
+        ul li ul li a {
+            display: block;
+            padding: 10px 10px;
+            width: 100px;
+        }
+
+        ul li ul li a:hover {
+            background-color: coral;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li>
+                        <a href="#">About</a>
+                        <ul>
+                            <li><a href="#">Link</a></li>
+                            <br />
+                            <li><a href="#">Link</a></li>
+                            <br />
+                            <li><a href="#">Link</a></li>
+                            <br />
+                            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Link</a></li>
+                            <br />
+                            <li><a href="#">Link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li><a href="#">Media</a></li>
+                    <li>
+                        <a href="#">News</a>
+                        <ul>
+                            <li><a href="#">Link</a></li>
+                            <br />
+                            <li><a href="#">Link</a></li>
+                            <br />
+                            <li><a href="#">Link</a></li>
+                            <br />
+                            <li><a href="#">Link</a></li>
+                            <br />
+                            <li><a href="#">Link</a></li>
+                        </ul>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <footer>Footer</footer>
+        <div class="box2"></div>
+        <div class="box"></div>
+        <div class="box3"></div>
+        <aside><img src="brugh.jpg" alt="Bruh"></aside>
+        <section>
+            <h1>Bruh</h1>
+        </section>
+    </div>
+</body>
+
+</html>

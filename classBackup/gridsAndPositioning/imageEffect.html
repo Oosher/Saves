@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Effect</title>
+    <style>
+        section {
+            height: 800px;
+            width: 600px;
+            border: 2px solid orangered;
+            margin: 40px auto;
+            overflow: hidden;
+        }
+
+        img {
+            height: 800px;
+            width: 600px;
+            transition: all 0.2s ease-in-out;
+        }
+
+        section:hover img {
+            transform: scale(1.11);
+
+        }
+    </style>
+</head>
+
+<body>
+    <section><img src="bark.jpg" alt="bark"></section>
+</body>
+
+</html>

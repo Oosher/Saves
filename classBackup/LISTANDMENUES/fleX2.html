@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex 2</title>
+    <style>
+      .container {
+        width: 80%;
+        margin: 0 auto;
+
+        display: flex;
+      }
+
+      article {
+        background-color: darkorange;
+        flex-grow: 1;
+        padding: 25px;
+      }
+      article h2 {
+        font-size: 2em;
+        color: black;
+      }
+      article p {
+        color: black;
+        font-family: "Times New Roman", Times, serif;
+        text-align: justify;
+      }
+      aside {
+        flex-basis: 200px;
+        background-color: cornflowerblue;
+      }
+      aside a {
+        text-decoration: none;
+        color: brown;
+        display: block;
+      }
+
+      @media (max-width: 550px) {
+        .container {
+          width: 100%;
+          flex-direction: column;
+        }
+        aside {
+          display: flex;
+          flex: 20px;
+          order: 1;
+        }
+        article {
+          order: 2;
+        }
+        a {
+          flex-grow: 3;
+          margin: 5px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <article>
+        <h2>The article</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque omnis
+          ratione minus delectus quasi et qui officiis. Velit eveniet facilis
+          provident et cupiditate quos atque rem dolorem? Nisi perferendis
+          facere totam, laborum eligendi rem quos dolorem officia iusto ea,
+          numquam praesentium tenetur recusandae error a ut accusantium? Eius id
+          laboriosam eligendi illo nihil explicabo voluptatem ipsa quaerat?
+          Temporibus quae ex fugiat animi accusantium. Incidunt quisquam amet
+          reiciendis illo perspiciatis ut quos, dolores ipsa commodi, vero
+          deserunt ipsam voluptates ratione necessitatibus. Consequuntur nihil,
+          reprehenderit aspernatur soluta dolore nam officia error debitis
+          dolorem dolorum accusantium vel voluptas voluptatem rem necessitatibus
+          nemo dolor!
+        </p>
+      </article>
+      <aside>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+      </aside>
+    </div>
+  </body>
+</html>

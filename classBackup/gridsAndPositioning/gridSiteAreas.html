@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Site Areas</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 100px 300px 400px 100px;
+            height: 90vh;
+            width: 70vw;
+            margin: 10px auto;
+            gap: 5px;
+            grid-template-areas: "header header header header"
+                "box1 box2 box3 aside"
+                "main main main aside"
+                "footer footer footer footer";
+
+        }
+
+        .item {
+            background-color: violet;
+            padding: 10px;
+        }
+
+        .box1 {
+            background-color: aquamarine;
+            grid-area: box1;
+        }
+
+        .box2 {
+            background-color: aquamarine;
+            grid-area: box2;
+        }
+
+        .box3 {
+            background-color: aquamarine;
+            grid-area: box3;
+        }
+
+        .header {
+            grid-area: header;
+        }
+
+        .footer {
+            grid-area: footer;
+        }
+
+        .aside {
+            grid-area: aside;
+            background-color: orange;
+        }
+
+        .main {
+            grid-area: main;
+            background-color: tomato;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            flex-direction: column;
+
+
+        }
+
+        .main .inmain {
+            margin: 3px;
+
+            width: 20vw;
+            height: auto;
+            background-color: springgreen;
+            border: 3px groove gold;
+            text-align: justify;
+
+        }
+
+        img {
+            width: 40%;
+            height: 63%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item header"></div>
+        <div class="item footer"></div>
+        <div class="item box1"></div>
+        <div class="item box2"></div>
+        <div class="item box3"></div>
+        <div class="item main">
+            <img src="brugh.jpg" alt="bruh">
+            <div class="inmain">Lorem ipsum dolor sit amet consectetur.</div>
+            <div class="inmain">Iusto id dicta autem in porro!</div>
+            <div class="inmain">Aperiam, corrupti accusamus. Quod, perspiciatis in.</div>
+            <div class="inmain">Labore officia incidunt eligendi a quaerat!</div>
+        </div>
+        <div class="item aside"></div>
+    </div>
+
+</body>
+
+</html>

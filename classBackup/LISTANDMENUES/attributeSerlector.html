@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attribute Selector</title>
+    <style>
+      body {
+        font-size: 25pt;
+      }
+      a[title="home sweet home"] {
+        color: chartreuse;
+        background-color: rgba(0, 0, 0, 0.741);
+      }
+      a[title~="home"] {
+        color: white;
+        background-color: blueviolet;
+      }
+      a[title*="ho"] {
+        color: coral;
+        background-color: darkblue;
+      }
+      a[href^="http"] {
+        color: chocolate;
+        background-color: brown;
+      }
+      a[href$="pdf"] {
+        color: blueviolet;
+        background-color: cyan;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a href="#" title="home sweet home">home</a></li>
+      <li><a href="#" title="home bitter home">about</a></li>
+      <li><a href="#" title="homo">media</a></li>
+      <li><a href="http://www.walla.co.il">walla</a></li>
+      <li><a href="http://www.mako.co.il">mako</a></li>
+      <li><a href="map.pdf">download map</a></li>
+    </ul>
+  </body>
+</html>
