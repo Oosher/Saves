@@ -11,7 +11,7 @@ button {
     width: 40vw;
 }
 
-.box {
+%box {
     width: 200px;
     height: 140px;
     background-color: darkcyan;
@@ -22,21 +22,21 @@ button {
 }
 
 .box1 {
-    @extend.box;
+    @extend %box;
 }
 
 .box2 {
-    @extend.box;
+    @extend %box;
 }
 
 .box3 {
-    @extend.box;
+    @extend %box;
 }
 
 .box4 {
-    @extend.box;
+    @extend %box;
 }
 
 .box5 {
-    @extend.box;
+    @extend %box;
 }

@@ -11,7 +11,7 @@ nav {
         display: flex;
         justify-content: space-evenly;
         list-style-type: none;
-        height: 6vh;
+        height: 50px;
 
 
 
@@ -32,4 +32,8 @@ nav {
         }
     }
 
+}
+
+.btn {
+    @extend %box;
 }
