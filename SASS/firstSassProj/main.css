@@ -56,7 +56,17 @@ button, .cta {
   width: 40vw;
 }
 
-.box {
+.box, .box5, .box4, .box3, .box2, .box1 {
+  width: 200px;
+  height: 140px;
+  background-color: darkcyan;
+  border: 5px groove darkgoldenrod;
+  border-radius: 8px;
+  box-shadow: 5px 5px 5px rgb(42, 42, 42);
+  margin: 10px;
+}
+
+.box, .box1, .box2, .box3, .box4, .box5 {
   margin: 150px auto;
   width: 40vw;
 }

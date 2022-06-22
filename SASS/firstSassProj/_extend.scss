@@ -10,3 +10,33 @@ button {
     @extend button;
     width: 40vw;
 }
+
+.box {
+    width: 200px;
+    height: 140px;
+    background-color: darkcyan;
+    border: 5px groove darkgoldenrod;
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px rgb(42, 42, 42);
+    margin: 10px;
+}
+
+.box1 {
+    @extend.box;
+}
+
+.box2 {
+    @extend.box;
+}
+
+.box3 {
+    @extend.box;
+}
+
+.box4 {
+    @extend.box;
+}
+
+.box5 {
+    @extend.box;
+}
