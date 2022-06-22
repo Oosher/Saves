@@ -1,0 +1,12 @@
+button {
+    font-size: 3rem;
+    font-family: 'Fascinate', cursive;
+    background-color: springgreen;
+    color: black;
+    margin: 9px;
+}
+
+.cta {
+    @extend button;
+    width: 40vw;
+}
