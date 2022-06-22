@@ -1,8 +1,10 @@
-@mixin box {
+$backColor2:orange;
 
-    width: 300px;
-    height: 300px;
-    background-color: turquoise;
+@mixin box($width, $hight, $back) {
+
+    width: $width;
+    height: $hight;
+    background-color: $back;
     border: 4px solid lightcyan;
     border-radius: 30px;
     margin: 20px;
@@ -15,21 +17,25 @@
 }
 
 .boxm1 {
-    @include box
+    @include box(250px, 350px, $backColor2);
+
+    &:hover {
+        background-color: darken($color: $backColor2, $amount: 20)
+    }
 }
 
 .boxm2 {
-    @include box
+    @include box(600px, 600px, aqua);
 }
 
 .boxm3 {
-    @include box
+    @include box(200px, 450px, lightcyan);
 }
 
 .boxm4 {
-    @include box
+    @include box(300px, 400px, lightgreen);
 }
 
 .boxm5 {
-    @include box
+    @include box(500px, 350px, orangered);
 }
