@@ -17,6 +17,21 @@ header {
   line-height: 1.8;
   z-index: 88;
 }
+@media (max-width: 1200px) {
+  header {
+    background-color: orange;
+  }
+}
+@media (max-width: 900px) {
+  header {
+    background-color: orangered;
+  }
+}
+@media (max-width: 600px) {
+  header {
+    background-color: tomato;
+  }
+}
 
 nav {
   width: 40vw;

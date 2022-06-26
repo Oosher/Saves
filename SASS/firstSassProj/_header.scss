@@ -14,4 +14,17 @@ header {
 
 
 
+    @include DESKTOP {
+        background-color: orange
+    }
+
+    @include tablet {
+        background-color: orangered
+    }
+
+    @include mobile {
+        background-color: tomato;
+    }
+
+
 }
