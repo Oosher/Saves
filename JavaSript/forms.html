@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        label {
+            margin: 0 auto;
+            background-color: turquoise;
+            font-size: 1.4rem;
+            display: flex;
+            width: 22vw;
+        }
+
+
+        input {
+            margin: 0 auto;
+            width: 22vw;
+            display: flex;
+
+        }
+
+        textarea {
+            display: flex;
+            margin: 0 auto;
+            width: 22vw;
+            height: 10vh;
+            resize: none;
+        }
+
+        select {
+            display: flex;
+            margin: 0 auto;
+            width: 22vw;
+        }
+
+        h1 {
+            width: 22vw;
+            margin: 0 auto;
+            text-align: center;
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <action="">
+        <label for="userName">Name :</label>
+        <input type="text" id="userName">
+        <br>
+        <label for="lastName">Last Name :</label>
+        <input type="text" id="lastName">
+        <br>
+        <label for="whatDoYouThink">What do you think ?</label>
+        <textarea name="" id="whatDoYouThink" maxlength="250"></textarea>
+        <br>
+        <label for="">What did i do?</label>
+        <select name="" id="">
+            <option value="">Bruh</option>
+            <option value="">What do you think you did ?</option>
+            <option value="">You know what you did</option>
+            <option value="">You did what you did now its in the past</option>
+            <option value="">We forgive you bro everyone makes mistakes sometimes</option>
+        </select>
+
+
+
+        <br>
+        <label for="hobbies">Hobbies</label>
+        <h1>Gaming</h1><input type="checkbox">
+        <h1>Cars</h1><input type="checkbox">
+        <h1>Guns</h1><input type="checkbox">
+        <h1>Blasters</h1> <input type="checkbox">
+        <br>
+        <label for="gender">Gender</label>
+        <h1>Male</h1>
+        <input type="radio" name="gender">
+
+        <h1>FeMale</h1>
+        <input type="radio" name="gender">
+
+        <h1>Other</h1>
+        <input type="radio" name="gender">
+
+        <br>
+        <input type="button" value="click">
+        <br>
+        <br>
+        <input type="reset" value="Reset">
+        <br>
+        <input type="submit" value="Submit">
+        </form>
+</body>
+
+</html>
