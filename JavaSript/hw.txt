@@ -1,0 +1,5 @@
+1: create 3  buttons
+fined the property for document that transfer you to a different website
+
+2: we have a text input and a button 
+the user will write a color name in the field pressing on the button will change the color to the background that the user used 

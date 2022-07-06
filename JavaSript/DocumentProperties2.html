@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Properties 2</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <!-- do not use the button element inside the -->
+    <button onclick="changeColor('red')">yellow</button>
+    <input type="button" onclick="clic()" value="bruh">
+    <button onclick="changeColor('pink')">pink</button>
+    <button onclick="discoColor()">Disco</button>
+    <script>
+        var a = 1;
+        /*   function yellow() {
+              a = a + 124;
+              document.bgColor = a;
+          } */
+        function clic() {
+            alert(a)
+        } /* 
+          function press() {
+              document.bgColor = 'pink';
+  
+          } */
+        function changeColor(color) {
+            document.bgColor = color;
+        }
+
+        function discoColor() {
+            a += 1254;
+            document.bgColor = a;
+        }
+
+    </script>
+</body>
+
+</html>
