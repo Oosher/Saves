@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Change The color </title>
+</head>
+
+<body>
+    <form name="myForm">
+        <label for=""></label>
+        <input type="text" name="userColor"><br>
+        <input type="button" value="click here" onclick="changeOnClick() ">
+    </form>
+    <script>
+        function changeOnClick() {
+            //option 1
+            /*  var bgchange = document.myForm.userColor.value;
+             document.bgColor = bgchange;*/
+            //option 2
+            document.bgColor = document.myForm.userColor.value;
+        } 
+    </script>
+</body>
+
+</html>
