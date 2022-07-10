@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If Else Statements</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        form {
+            width: 20vw;
+        }
+
+        label {
+            font-size: 4rem;
+            width: 40vw;
+        }
+
+        input {
+            margin: 3px;
+            width: 20vw;
+
+        }
+    </style>
+</head>
+
+<body>
+    <form name="ticketForm">
+        <label for="text">Tell me your age</label>
+        <input type="number" name="userAge">
+        <br>
+        <input type="button" value="Click for the Prize" onclick="price()">
+    </form>
+    <script>
+        function price() {
+            var uAge = document.ticketForm.userAge.value;
+            if (uAge <= 12 && uAge >= 8) {
+                alert("The ticket price is 75 nis");
+            }
+            else if (uAge > 12) {
+                alert("The ticket price is 150 nis");
+            }
+            else {
+                alert("you cannot buy a ticket to our show")
+            }
+
+        } 
+    </script>
+</body>
+
+</html>
