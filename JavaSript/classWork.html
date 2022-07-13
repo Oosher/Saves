@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class work</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        form {
+            display: block;
+            margin: 30px auto;
+            width: 500px;
+            background-color: tomato;
+            padding: 15px;
+
+        }
+
+        #check {
+            width: 250px;
+            border: 2px black solid;
+        }
+
+        label {
+            width: auto;
+        }
+
+        input {
+            width: 79.1%;
+        }
+
+        input[type~="button"] {
+            right: 0px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <form name="myForm">
+        <label for="">Enter your age</label>
+        <input type="text" name="age"> <br><br>
+        <label for="">Is you parent coming with you ?</label>
+        <input type="checkbox" name="parent" id="check"><br><br>
+        <input type="button" value="Click" onclick="allowdToBuy()">
+    </form>
+    <script>
+        function allowdToBuy() {
+            var age = document.myForm.age.value, parent = document.myForm.parent;
+
+            if (age > 16) {
+                alert("you can buy a ticket")
+            }
+            else if (age < 16 && parent.checked) {
+                alert("you can buy a ticket")
+            }
+            else {
+                alert("Go home please")
+            }
+        } 
+    </script>
+</body>
+
+</html>
