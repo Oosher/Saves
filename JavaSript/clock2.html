@@ -5,16 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clock</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Merriweather:ital@1&display=swap');
+    <title>Clock 2</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
 
+    <style>
         input {
             display: block;
             width: 600px;
             margin: 40px auto;
             text-align: center;
-            font-family: 'Merriweather', serif;
+            font-family: Orbitron;
             border: 0;
             font-size: 5rem;
             color: turquoise;
@@ -30,33 +30,25 @@
     <script>
 
         function runTime() {
-
+            var theTime
             var clock = document.clockForm.clock;
             var time = new Date(), hour = time.getHours(), minutes = time.getMinutes(), seconds = time.getSeconds();
             //option 1
             if (seconds < 10) {
                 seconds = "0" + seconds;
+
             }
             if (minutes < 10) {
-                minutes = ("0" + minutes);
-            }
+                minutes = "0" + minutes;
 
+            }
             if (hour > 12) {
                 hour = hour - 12;
-                seconds = seconds + " PM";
+                theTime = hour + ":" + minutes + ":" + seconds + "PM";
             }
-            else if (hour < 12) {
-                seconds = seconds + " AM";
-
+            else {
+                theTime = hour + ":" + minutes + ":" + seconds + "AM";
             }
-            /* else {
-                hour = 12;
-                seconds = seconds + " AM";
-
-            } */
-
-
-            var theTime = hour + ":" + minutes + ":" + seconds;
             clock.value = theTime;
             //option 2
             /*  document.write(time.getHours() + ":" + time.getMinutes() + ":" + time.getSeconds()) */
