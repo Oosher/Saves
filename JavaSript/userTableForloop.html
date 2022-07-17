@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Table For loop</title>
+</head>
+
+<body>
+    <form action="">
+        <label for="">How many boxes ?</label>
+        <input type="text" id="userInput">
+        <input type="button" value="Click to generate" onclick="userGeneratedTable()">
+    </form>
+    <script>
+        function userGeneratedTable() {
+            var userInput = document.getElementById("userInput").value;
+            document.write("<table border=2>");
+            document.write("<tr>");
+
+            for (let i = 0; i < userInput; i++) {
+
+                document.write("<td>Happy</td>");
+
+            }
+
+            document.write("</td>");
+            document.write("</table>");
+        }
+    </script>
+</body>
+
+</html>
