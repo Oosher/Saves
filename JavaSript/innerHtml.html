@@ -9,12 +9,15 @@
 </head>
 
 <body>
-    <div id="box">Who is Alis</div>
+    <div id="box">Who is Alis </div>
     <button onclick="change()">Click me</button>
     <script>
         function change() {
             const box = document.getElementById("box");
-            box.innerHTML = 'Alice is your sister';
+            box.innerHTML += ' Alice is your sister';
+            box.style.color = "red";
+            box.style.fontSize = "4rem";
+            document.body.style.backgroundColor = "random";
         }
     </script>
 </body>
