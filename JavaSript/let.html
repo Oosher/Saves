@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let vs Var</title>
+</head>
+
+<body>
+    <script>
+        /*  console.log("hello " + uname);
+         let uname = "avi"; */
+        /*  let num = 100;
+         let num = 200;
+         console.log(num); */
+        /*  no error
+        for (var i = 1; i <= 10; i++) {
+             console.log("i=" + i);
+ 
+         }
+         console.log("i after the loop =" + i); 
+         
+         error */
+        /* for (let i = 1; i <= 10; i++) {
+            console.log("i=" + i);
+
+        }
+        console.log("i after the loop =" + i); */
+        let i;
+        for (i = 1; i <= 10; i++) {
+            console.log("i=" + i);
+
+        }
+        console.log("i after the loop =" + i);
+    </script>
+</body>
+
+</html>
