@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop Array</title>
+    <style>
+        li {
+            list-style: decimal;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="coffee"></div>
+    <script>
+        const coffee = document.getElementById("coffee");
+        let type = ["Black", "Espresso", "Kapuchino", "Makiato", "Americano", "Chocolate milk"];
+
+        coffee.innerHTML += "<ul>";
+        for (let i = 0; i < type.length; i++) {
+            coffee.innerHTML += "<li> " + type[i] + "</li> ";
+
+        }
+        coffee.innerHTML += "</ul>"; 
+    </script>
+</body>
+
+</html>
