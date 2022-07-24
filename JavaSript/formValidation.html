@@ -7,10 +7,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Validation</title>
 </head>
+<style>
+    label {
+        display: block;
+        color: coral;
+        font-size: 1.2rem;
+    }
+
+    input {
+        margin: 3 px;
+        font-size: 1.2rem;
+    }
+</style>
 
 <body>
-    <script>
+    <form action="">
+        <div>
+            <label for="">Enter your Name : </label>
+            <input type="text" id="usName"><br>
+            <span id="error" style="color: red;font-family:Georgia, 'Times New Roman', Times, serif; "></span>
+        </div>
+        <br>
+        <div>
+            <label for="">Enter your Email : </label>
+            <input type="text" id="email"><br>
+            <span id="error2" style="color: red;font-family:Georgia, 'Times New Roman', Times, serif;"></span>
+        </div>
+        <br>
+        <input type="button" id="btn" value="Submit">
 
+    </form>
+    <script>
+        document.getElementById("btn").addEventListener("click", function () {
+            let usName = document.getElementById("usName"), email = document.getElementById("email");
+            const error = document.getElementById("error");
+            const error2 = document.getElementById("error2");
+            if (usName.value == "") {
+                /* alert("Please enter your username"); */
+                usName.focus();
+                error.innerHTML = "Please enter your username";
+            } else {
+                error.innerHTML = "";
+            }
+            if (email.value == "") {
+                /*    alert("Please enter your email address"); */
+
+                email.focus();
+                error2.innerHTML = "Please enter email address";
+
+            }
+            else {
+                error2.innerHTML = "";
+            }
+        });
     </script>
 </body>
 
