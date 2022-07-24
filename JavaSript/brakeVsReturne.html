@@ -10,7 +10,28 @@
 
 <body>
     <script>
+        function goTo() {
+            for (let i = 0; i < 100; i++) {
+                if (i == 50) {
+                    alert("i = " + i)
+                    break;
+                }
 
+            }//brake stops the loop
+            console.log("after the loop is the after party");
+        }
+        function goTo2() {
+            for (let i = 0; i < 100; i++) {//return stops the function
+                if (i == 50) {
+                    alert("i = " + i)
+                    return;
+                }
+
+            }
+            console.log("after the loop is the after party");
+        }
+        goTo();
+        goTo2();
     </script>
 </body>
 
