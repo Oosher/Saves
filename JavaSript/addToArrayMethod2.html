@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add To Array</title>
+    <style>
+        @font-face {
+            font-family: mario64;
+            src: url(SuperMario256.ttf);
+        }
+
+        * {
+            margin: 2px;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        input[type="button"],
+        input,
+        label {
+            font-family: mario64;
+            font-size: 1.3rem;
+        }
+
+        label {
+            display: block;
+            width: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <label for="">Pleas enter a number that you like to ad to the array : </label>
+        <input type="text" id="userAdd">
+        <input type="button" value="Generate" id="btn">
+    </form>
+    <script>
+        let userArr = [];
+        document.getElementById("btn").addEventListener("click", addArr);
+        let arr = [];
+        function addArr() {
+            let userAdd = document.getElementById("userAdd").value;
+            arr.push(userAdd);
+
+            console.log(arr);
+
+
+        }
+
+
+    </script>
+</body>
+
+</html>
