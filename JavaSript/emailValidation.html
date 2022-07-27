@@ -9,8 +9,32 @@
 </head>
 
 <body>
-    <script>
 
+
+
+
+    <form action="">
+        <label for="">Enter your email</label>
+        <input type="text" id="email">
+        <input type="button" value="Send form" id="btn">
+    </form>
+    <script>
+        document.getElementById("btn").addEventListener("click", function () {
+
+
+            const email = document.getElementById("email");
+            if (email.value == "") {
+                alert("Please enter your email")
+                email.focus();
+            } else if (email.value.indexOf("@") == -1 || email.value.indexOf(".") == -1) {
+                alert("you must heave a @ and . symbols at you email adders")
+                email.focus();
+            }
+
+            /*  console.log(email.value.indexOf("@")); */
+
+
+        });
     </script>
 </body>
 
