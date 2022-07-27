@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Input</title>
+</head>
+
+<body>
+    <form action="">
+        <input type="number" name="" id="num1">+
+        <input type="number" name="" id="num2">=
+        <input type="number" name="" id="sum">
+        <input type="button" value="Calc" id="btn">
+    </form>
+    <script>
+        document.getElementById("btn").addEventListener("click", function () {
+            const num1 = document.getElementById("num1");
+            const num2 = document.getElementById("num2");
+            const sum = document.getElementById("sum");
+
+            sum.value = parseInt(num1.value) + parseInt(num2.value);
+        });
+    </script>
+</body>
+
+</html>

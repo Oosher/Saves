@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Form Fields</title>
+    <style>
+        ::placeholder {
+            font-size: 1rem;
+            font-family: 'Times New Roman', Times, serif;
+            color: rgba(255, 99, 71, 0.459);
+
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <label for="color">Choose color:</label>
+        <input type="color" name="" id="color">
+        <br>
+        <label for="date">Choose date:</label>
+        <input type="date" name="" id="date">
+        <br>
+        <label for="userName">Enter userName:</label>
+        <input type="text" name="" id="userName" required placeholder="User name">
+        <br>
+        <label for="email">Enter your email:</label>
+        <input type="email" name="" id="email" required placeholder="Email">
+        <br>
+        <label for="phonenumber">Enter your phone number:</label>
+        <input type="tel" name="" id="phonenumber" required placeholder="Phone number">
+        <br>
+        <label for="number">Enter your number:</label>
+        <input type="number" name="" id="number" max="99992" min="200" step="20" required placeholder="number">
+        <br>
+        <input type="submit" value="Change color">
+    </form>
+</body>
+
+</html>
