@@ -24,11 +24,9 @@ img {
     background-color: orange;
     line-height: 1.2;
   }
-
   img {
     display: none;
   }
-
   img[alt^=theree] {
     display: block;
   }
@@ -39,12 +37,10 @@ img {
     background-color: tomato;
     line-height: 2;
   }
-
   img[alt^=theree],
 img[alt^=one] {
     display: none;
   }
-
   img[alt^=tow] {
     display: block;
   }
@@ -55,12 +51,10 @@ img[alt^=one] {
     background-color: lightblue;
     line-height: 3;
   }
-
   img[alt^=tow],
 img[alt^=theree] {
     display: none;
   }
-
   img[alt^=one] {
     display: block;
   }

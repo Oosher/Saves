@@ -1,0 +1,35 @@
+footer{
+    display: block;
+    position: absolute;
+    background-color: #9453a6;
+    bottom: 0px;
+    width: 100vw;
+    height: 25vh;
+    display: flex;
+    box-shadow: -3px -3px 7px ;
+    
+}
+
+ul{
+    list-style: none;
+    font-size: 0.9rem;
+  
+}
+li{
+    margin: 10px;
+    font-size: 1.1rem;
+    font-family: 'Roboto', sans-serif;
+}
+ul .footerHeader{
+       font-weight: bold;
+       text-shadow: 2px 2px 3px;
+}
+ @media (max-width: 581px){
+    li{
+        font-size: 0.8rem;
+    }
+    footer{
+        height: 60vh;
+
+    }
+ }
