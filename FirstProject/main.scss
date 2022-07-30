@@ -2,3 +2,51 @@
 body{
     background-color: #f2f2f2;
 }
+.carousel-inner div img{
+    height: 80vh;
+}
+.mobileImg{
+    display: none;
+   
+}
+.mobileImg img{
+     width: 100vw;
+     height: 80vh;
+}
+p{
+   font-family: 'Roboto', sans-serif; 
+}
+.midSectionParagraph{ 
+    width: 70vw;
+   margin: 15px auto;
+   background-color: #f2cc0f;
+   padding: 5px;
+   line-height: 2;
+}
+.midSectionParagraph span{
+    color:#8cbf3f;
+    font-size: 1.7rem;
+    
+}
+.row h1{
+    text-align: center;
+}
+.sponsorsmobile{
+    display: none ;
+}
+.card img{
+    height: 20vh;
+}
+@media (max-width: 990px){
+    #carouselExampleCaptions{
+        display: none;
+    }
+.mobileImg{
+    display: block;
+}
+.sponsorsmobile{
+    display:flex;
+}
+.sponsorpc{display: none
+}
+}
