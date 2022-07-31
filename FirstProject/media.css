@@ -41,7 +41,7 @@ footer a img:hover {
   color: black;
 }
 
-@media (max-width: 581px) {
+@media (max-width: 990px) {
   li {
     font-size: 0.8rem;
   }
