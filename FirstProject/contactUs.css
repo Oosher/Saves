@@ -92,10 +92,21 @@ footer a img:hover {
   }
 }
 form {
-  width: 20vw;
-  margin: 20px auto;
+  width: 25vw;
+  margin: 40px auto;
+  padding: 20px 10px;
   display: flex;
   flex-direction: column;
+  /*   background-image: url("websiteImages/backgrundform.png"); */
+  /*   background-repeat: no-repeat; */
+  border-radius: 2%;
+  /* color:#f2f2f2 ; */
+  background: linear-gradient(to bottom, #8cbf3f, #9453a6);
+  box-shadow: #9453a6 -5px 5px, rgba(148, 83, 166, 0.8039215686) -10px 10px, rgba(148, 83, 166, 0.6352941176) -15px 15px, rgba(148, 83, 166, 0.5490196078) -20px 20px, rgba(148, 83, 166, 0.3058823529) -25px 25px;
+}
+
+body {
+  background: linear-gradient(to right, #f2cc0f, #8cbf3f);
 }
 
 textarea {
@@ -109,4 +120,10 @@ input[type=submit] {
 
 span {
   color: red;
+}
+
+@media (max-width: 990px) {
+  form {
+    width: 80vw;
+  }
 }/*# sourceMappingURL=contactUs.css.map */
