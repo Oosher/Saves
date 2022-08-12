@@ -50,3 +50,80 @@ p{
 .sponsorpc{display: none
 }
 }
+#sponsorFocus{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.472);
+    top: 0vh;
+    display: none;
+
+}
+.sponserbox{
+    background-color: #f2f2f2;
+    width: 300px;
+    height: 512px;
+    margin: 20vh auto;
+    display: none;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    border-radius: 20px;
+}
+.sponserbox h1:first-of-type{  
+ padding-right: 10px;
+    text-align:right;
+    color: red;
+}
+.sponserbox h1:first-of-type:hover{
+    cursor: pointer;
+    color: rgb(129, 8, 8);
+
+}
+.sponserbox img,.sponserbox h1:nth-of-type(2),.sponserbox p,.sponserbox button{
+    position: relative;
+     top: -10px;
+}
+
+.sponserbox img{
+    width: 280px;
+    height: 120px;
+   
+    left:10px;
+
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.sponserbox h1:nth-of-type(2){
+    margin: 7px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+
+
+
+.sponserbox p{
+
+    font-size: 0.87rem;
+    padding:0px 7px;
+    text-align: justify;
+
+}
+
+
+.sponserbox button {
+
+   top: -22px;
+   left: 5px;
+   a{
+    text-decoration: none;
+   }
+}
+
+
+
+@media (max-width: 1300px){
+.sponserbox{
+  
+}
+
+}
