@@ -163,7 +163,7 @@ p {
 .sponserbox {
   background-color: #f2f2f2;
   width: 300px;
-  height: 512px;
+  height: 473px;
   margin: 20vh auto;
   display: none;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
@@ -171,9 +171,14 @@ p {
 }
 
 .sponserbox h1:first-of-type {
+  width: 10px;
   padding-right: 10px;
   text-align: right;
   color: red;
+  position: relative;
+  top: -6px;
+  left: 264px;
+  z-index: 10;
 }
 
 .sponserbox h1:first-of-type:hover {
@@ -183,13 +188,15 @@ p {
 
 .sponserbox img, .sponserbox h1:nth-of-type(2), .sponserbox p, .sponserbox button {
   position: relative;
-  top: -10px;
+  top: -50px;
+  z-index: 1;
 }
 
 .sponserbox img {
   width: 280px;
   height: 120px;
   left: 10px;
+  border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
@@ -206,7 +213,7 @@ p {
 }
 
 .sponserbox button {
-  top: -22px;
+  top: -60px;
   left: 5px;
 }
 .sponserbox button a {
