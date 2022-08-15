@@ -2,6 +2,8 @@
 body{
     background-color: #f2f2f2;
 }
+
+//carousel area
 .carousel-inner div img{
     height: 90vh;
 }
@@ -16,6 +18,10 @@ body{
 p{
    font-family: 'Roboto', sans-serif; 
 }
+.carousel-caption{
+text-shadow: black 3px 3px 5px;
+}
+//mid section paragraph
 .midSectionParagraph{ 
     width: 70vw;
    margin: 15px auto;
@@ -28,28 +34,47 @@ p{
     font-size: 1.7rem;
     
 }
+//sponsor area
 .row h1{
     text-align: center;
 }
+.card-body{
+    display: flex;
+    flex-direction: column;
+    
+}
+ .btn-primary{
+   
+    margin-top: auto;
+
+} 
 .sponsorsmobile{
     display: none ;
 }
 .card img{
     height: 20vh;
 }
+
+//switch to sponsor mobile
 @media (max-width: 990px){
     #carouselExampleCaptions{
         display: none;
     }
-.mobileImg{
-    display: block;
+    .mobileImg{
+        display: block;
+    }
+    .sponsorsmobile{
+        display:flex;
+    }
+    .sponsorpc{
+        display: none
+    }
+    .card-body .card-text{
+        font-size: 3vw;
+    }
+    
 }
-.sponsorsmobile{
-    display:flex;
-}
-.sponsorpc{display: none
-}
-}
+//start of the popup sponsor area
 #sponsorFocus{
     position: fixed;
     width: 100vw;
@@ -107,7 +132,6 @@ p{
 
 
 
-
 .sponserbox p{
 
     font-size: 0.87rem;
@@ -122,16 +146,37 @@ p{
    top: -60px;
    left: 5px;
 
+                border: 4px solid rgba(0, 0, 0, 0.586);
+                cursor: pointer;
+                border-radius: 8px;
+                padding: 5px 10px 7px;
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 1;
+                
+              
+               
+                
+               
+                
         a{
              text-decoration: none;
         }
 }
 
+.card-text{
+font-size:1vw ;
+}
 
 
 @media (max-width: 1300px){
-.sponserbox{
-  
+
+    .card-text{
+    font-size:1.4vw ;
 }
 
 }
+
+
+        
+         

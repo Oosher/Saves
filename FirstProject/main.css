@@ -112,6 +112,10 @@ p {
   font-family: "Roboto", sans-serif;
 }
 
+.carousel-caption {
+  text-shadow: black 3px 3px 5px;
+}
+
 .midSectionParagraph {
   width: 70vw;
   margin: 15px auto;
@@ -127,6 +131,15 @@ p {
 
 .row h1 {
   text-align: center;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-primary {
+  margin-top: auto;
 }
 
 .sponsorsmobile {
@@ -149,6 +162,9 @@ p {
   }
   .sponsorpc {
     display: none;
+  }
+  .card-body .card-text {
+    font-size: 3vw;
   }
 }
 #sponsorFocus {
@@ -217,7 +233,24 @@ p {
 .sponserbox button {
   top: -60px;
   left: 5px;
+  border: 4px solid rgba(0, 0, 0, 0.586);
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 5px 10px 7px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
 }
 .sponserbox button a {
   text-decoration: none;
+}
+
+.card-text {
+  font-size: 1vw;
+}
+
+@media (max-width: 1300px) {
+  .card-text {
+    font-size: 1.4vw;
+  }
 }/*# sourceMappingURL=main.css.map */
