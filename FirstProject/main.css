@@ -305,4 +305,14 @@ p {
   position: fixed;
   cursor: pointer;
   right: 30vw;
+}
+
+@media (max-width: 990px) {
+  .triviapopupcontainer form {
+    width: 80vw;
+  }
+  #triviaClose {
+    right: 15.5vw;
+    top: 10vh;
+  }
 }/*# sourceMappingURL=main.css.map */
