@@ -253,4 +253,56 @@ p {
 }
 .sponserbox button a {
   text-decoration: none;
+}
+
+/* Trivia banner style start */
+.triviaBanner {
+  width: 100vw;
+  height: 25vh;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-image: url("websiteImages/Trivia.png");
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+}
+.triviaBanner img {
+  display: block;
+  margin: auto;
+}
+
+.triviapopupcontainer {
+  display: none;
+  top: 0px;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(13, 13, 13, 0.337254902);
+  overflow: scroll;
+}
+
+.triviapopupcontainer form {
+  width: 40vw;
+  margin: 10vh auto;
+  background-color: #f2f2f2;
+  padding: 15px;
+}
+
+.quizCheck1 {
+  display: none;
+}
+
+#score {
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  position: fixed;
+}
+
+#triviaClose {
+  color: red;
+  position: fixed;
+  cursor: pointer;
+  right: 30vw;
 }/*# sourceMappingURL=main.css.map */

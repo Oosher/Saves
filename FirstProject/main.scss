@@ -174,9 +174,65 @@ text-shadow: black 3px 3px 5px;
 
 
 
+/* Trivia banner style start */
+
+.triviaBanner{
+    width: 100vw;
+    height: 25vh;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-image: url("websiteImages/Trivia.png");
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    img{
+
+        display: block;
+        margin: auto;
+
+    }
+}
 
 
 
+
+//trivia start
+.triviapopupcontainer{
+    display: none;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color:#0d0d0d56;
+    overflow: scroll;
+ 
+}
+.triviapopupcontainer form{
+    width: 40vw;
+    margin: 10vh auto;
+    background-color: #f2f2f2;
+    padding: 15px;
+}
+.quizCheck1{
+    display: none;
+}
+
+#score{
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    position: fixed;
+}
+
+
+
+#triviaClose{
+    color: red;
+    position: fixed;
+    cursor: pointer;
+    right: 30vw;
+}
 
         
          

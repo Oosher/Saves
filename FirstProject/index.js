@@ -33,5 +33,62 @@ sponsPopup("sponsSeven","block","sponsorImeges/sponsimeg7.jpg","HOLLYWOOD ANNOUN
 sponsPopup("sponsEight","block","sponsorImeges/sponsimeg8.jpg","About the Experience","Zak Bagans’ The Haunted Museum is Las Vegas’ award-winning, “Best Attraction,” (Las Vegas Weekly) and 2-time winning, “Best Museum,” (LV Review-Journal) as seen on Travel Channel’s #1-rated series, Ghost Adventures!","https://thehauntedmuseum.com/");
 
 
-/* popup cose */
+/* popup close */
 sponsPopup("closeSponserBox1","none","","","","","");
+
+
+
+
+//trivia open
+document.getElementById("triviaBannerr").addEventListener("click",function(){
+document.getElementById("triviapopupcontainerr").style.display="block";
+})
+
+// trivia check
+let score =0;
+let triviaAnswers=["2","5","10","14","17","19","26","28","31","37"]
+document.getElementById("triviaCheck").addEventListener("click",function(){
+    score =0;
+    for (let i = 0; i < triviaAnswers.length; i++) {
+        triviaCheck("triviaAnswer"+triviaAnswers[i],"quizCheck"+(i+1));
+    }
+    if(score>=60)
+    {
+        document.getElementById("score").style.color="lightgreen"
+    }
+
+    else{
+        document.getElementById("score").style.color="red"
+    }
+    document.getElementById("score").style.display="block";
+    document.getElementById("score").innerHTML="Your score is: "+score;
+
+    });
+
+
+function triviaCheck(correctAnswer ,feedbackMessage){
+    
+    if(document.getElementById(correctAnswer).checked)
+    {
+        document.getElementById(feedbackMessage).innerHTML="Correct answer";
+        document.getElementById(feedbackMessage).style.color="green";
+        score+=10;
+    }
+    else
+    {
+        document.getElementById(feedbackMessage).innerHTML="Wrong answer";
+        document.getElementById(feedbackMessage).style.color="red";
+    }
+}
+
+
+//trivia close
+
+document.getElementById("triviaClose").addEventListener("click",function(){
+    document.getElementById("triviapopupcontainerr").style.display="none";
+    document.getElementById("score").style.display="none";
+});
+
+
+
+
