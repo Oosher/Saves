@@ -14,11 +14,33 @@ div img{
 @media (max-width: 990px){
     .row #navbar-example3 nav a{
     
-    font-size: 0.2rem;
+    font-size: 1rem;
+
+    
+}
+.col-10{
+    display: none;
+}
+}
+
+@media (max-width: 575px){
+    .row #navbar-example3 nav a{
+    
+    font-size: 1rem;
+
     
 }
 div img{
-    
-    width: 11vw;
+    display: block;
+    width: 80vw;
+    height: 40vh;
+    margin:0px auto;
+}
+.col-10{
+    position: relative;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    top: 0px;
 }
 }
