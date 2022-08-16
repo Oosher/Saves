@@ -150,6 +150,15 @@ p {
   height: 20vh;
 }
 
+.card-text {
+  font-size: 1vw;
+}
+
+@media (max-width: 1300px) {
+  .card-text {
+    font-size: 1.4vw;
+  }
+}
 @media (max-width: 990px) {
   #carouselExampleCaptions {
     display: none;
@@ -240,17 +249,8 @@ p {
   font-size: 18px;
   font-weight: 700;
   line-height: 1;
+  margin-top: auto;
 }
 .sponserbox button a {
   text-decoration: none;
-}
-
-.card-text {
-  font-size: 1vw;
-}
-
-@media (max-width: 1300px) {
-  .card-text {
-    font-size: 1.4vw;
-  }
 }/*# sourceMappingURL=main.css.map */
