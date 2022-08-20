@@ -81,6 +81,6 @@ function displayChange(element,display,input){
    
 
 
-
+mobileForm();
 mobileRes.addEventListener("change",mobileForm);
 
