@@ -1,4 +1,4 @@
-
+//form check
 const fName =getElementby("fName"),lName=getElementby("lName"),email=getElementby("email"),textBox=getElementby("textBox");
 
 
@@ -39,3 +39,48 @@ function notEmpty(form , error){
    
 
 }
+
+
+
+
+/* mobile form */
+const fNaameLabel=document.getElementById("fNaameLabel");
+const lNameLabel=document.getElementById("lNameLabel");
+const emailLabel = document.getElementById("emailLabel");
+const mobileRes =window.matchMedia("(max-width: 990px)");
+const labelArray =[fNaameLabel,lNameLabel,emailLabel];
+const inputArray =[fName,lName,email];
+
+ 
+function mobileForm(){
+
+    if (mobileRes.matches){
+        displayChange(labelArray,"none",inputArray);
+        
+        
+    }
+    else{
+       displayChange(labelArray,"block",inputArray);
+      
+    }
+}
+
+function displayChange(element,display,input){
+    for (let i = 0; i < element.length; i++) {
+        element[i].style.display=display; 
+    }
+
+    for (let i = 0; i < input.length; i++) {
+        if(display=="none"){
+         input[i].placeholder =element[i].innerHTML;
+        }else{
+         input[i].placeholder ="";
+        }
+    }
+}
+   
+
+
+
+mobileRes.addEventListener("change",mobileForm);
+

@@ -205,13 +205,15 @@ text-shadow: black 3px 3px 5px;
     position: fixed;
     background-color:#0d0d0d56;
     overflow: scroll;
- 
+
+
 }
 .triviapopupcontainer form{
     width: 40vw;
     margin: 10vh auto;
     background-color: #f2f2f2;
     padding: 15px;
+    border-radius: 10PX; 
 }
 .quizCheck1{
     display: none;

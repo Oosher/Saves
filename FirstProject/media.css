@@ -53,6 +53,7 @@ footer a img:hover {
   font-family: "Roboto", sans-serif;
   box-shadow: 3px 3px 7px;
   background-color: #f2f2f2;
+  background: linear-gradient(to right, #f2cc0f, #8cbf3f);
 }
 
 .nav-link {
