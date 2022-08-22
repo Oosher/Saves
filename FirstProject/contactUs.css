@@ -94,7 +94,7 @@ footer a img:hover {
   }
 }
 form {
-  width: 25vw;
+  width: 30vw;
   margin: 40px auto;
   padding: 20px 10px;
   display: flex;
@@ -104,11 +104,7 @@ form {
   border-radius: 2%;
   /* color:#f2f2f2 ; */
   background: linear-gradient(to bottom, #8cbf3f, #9453a6);
-  box-shadow: #9453a6 -5px 5px, rgba(148, 83, 166, 0.8039215686) -10px 10px, rgba(148, 83, 166, 0.6352941176) -15px 15px, rgba(148, 83, 166, 0.5490196078) -20px 20px, rgba(148, 83, 166, 0.3058823529) -25px 25px;
-}
-
-body {
-  background: linear-gradient(to right, #f2cc0f, #8cbf3f);
+  box-shadow: #8cbf3f -5px 5px, rgba(140, 191, 63, 0.7215686275) -10px 10px, rgba(140, 191, 63, 0.5254901961) -15px 15px, rgba(140, 191, 63, 0.4156862745) -20px 20px, rgba(140, 191, 63, 0.2705882353) -25px 25px;
 }
 
 textarea {
@@ -122,8 +118,14 @@ input[type=submit] {
 
 span {
   color: red;
+  text-shadow: black 1px 1px 1px;
 }
 
+@media (max-width: 1200px) {
+  form {
+    width: 40vw;
+  }
+}
 @media (max-width: 990px) {
   form {
     width: 80vw;
