@@ -50,6 +50,7 @@ footer a img:hover {
   }
 }
 .navbar {
+  width: 100vw;
   font-family: "Roboto", sans-serif;
   box-shadow: 3px 3px 7px;
   background-color: #f2f2f2;

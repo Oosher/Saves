@@ -1,4 +1,5 @@
 @import "header","footer";
+
 body{
     background-color: #f2f2f2;
 }
@@ -9,11 +10,12 @@ body{
 }
 .mobileImg{
     display: none;
+    width: 100vw;
    
 }
 .mobileImg img{
      width: 100vw;
-     height: 80vh;
+     
 }
 p{
    font-family: 'Roboto', sans-serif; 
@@ -221,10 +223,10 @@ text-shadow: black 3px 3px 5px;
 
 #score{
     display: block;
-    position: absolute;
-    top: 0px;
-    right: 0px;
     position: fixed;
+    left: 20px;
+    top: 0px;
+    z-index:20;
 }
 
 
@@ -238,10 +240,14 @@ text-shadow: black 3px 3px 5px;
 
     @media (max-width: 990px){
     .triviapopupcontainer form{
-    width: 80vw;
-}
-#triviaClose{
-    right: 15.5vw;
-    top: 10vh;
-}
+        width: 80vw;
+    }
+    #triviaClose{
+        right: 15.5vw;
+        top: 10vh;
+    }
+    #score{
+        right: 20px;
+        left: auto;
+    }
 }
