@@ -93,14 +93,20 @@ footer a img:hover {
     display: none;
   }
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 img {
   width: 10vw;
   height: 20vh;
 }
 
 .lightboxContainer {
-  width: 70vw;
-  margin: 20px auto;
+  width: 65vw;
+  margin: 0px auto;
 }
 
 h1 {
@@ -306,4 +312,23 @@ iframe {
   cursor: pointer;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
+}
+
+@media (max-width: 990px) {
+  .lightboxContainer {
+    width: 80vw;
+  }
+  .lightboxContainer div {
+    width: 80vw;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .lightboxContainer img {
+    width: 100%;
+  }
+  iframe {
+    height: 40vh;
+  }
 }/*# sourceMappingURL=media.css.map */
